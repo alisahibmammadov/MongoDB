@@ -6,6 +6,6 @@ const app = express();
 
 app.use(bodyParser.json());
 app.post("/products", mongoPratice.createProduct);
-// app.get("/products", mongoPratice.getProducts);
+app.get("/products", mongoPratice.getProduct);
 
 app.listen(4000);
